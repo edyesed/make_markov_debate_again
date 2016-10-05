@@ -7,7 +7,7 @@ Who doesn't love a markovbot seeded with a transcript of the presidential debate
 # To run
 0. `virtualenv ~/virtualenvs/markov`
 1. `source ~/virtualenvs/markov/bin/activate`
-1. `pip install -f requirements.txt`
+1. `pip install -r requirements.txt`
 2. `./parse_transcript_markov.py`
 3. `./back-and-forth.py`
 
