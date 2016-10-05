@@ -1,0 +1,1 @@
+PyMarkovChain==1.8
