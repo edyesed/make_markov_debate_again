@@ -7,19 +7,19 @@ import re
 #   cleanup to remove annotations from the source
 #import requests
 #from bs4 import BeautifulSoup as bs
+import glob
 from pymarkovchain import MarkovChain
 #from pprint import pprint
 
-FILE='./transcript.pres.v1'
-
 def main():
-  re_speaker_text = re.compile(r"^([A-Z]+): (.*)", re.MULTILINE)
-  with open(FILE, 'r') as content_file:
-    content = content_file.read()
-  for match in re_speaker_text.finditer(content):
-    speaker, said = match.groups()
+  #re_speaker_text = re.compile(r"^([A-Z]+): (.*)", re.MULTILINE)
+  files = glob.glob("./training_texts/*")
+  for file in files: 
+    content = open(file).read()
+    m = re.search("./training_texts/([A-Z]+)", file)
+    speaker = m.group(1)
     mc = MarkovChain("/var/tmp/markov_db.{0}".format(speaker))
-    mc.generateDatabase(said.lower())
+    mc.generateDatabase(content)
     mc.dumpdb()
  
 

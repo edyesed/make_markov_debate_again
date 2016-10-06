@@ -32,6 +32,6 @@ if __name__ == "__main__":
         print(r, r.text)
       else:
         print(name +": "+ unicode(mcs[name].generateString(), 'utf-8'))
-      time.sleep(2)
+      time.sleep(15)
     except KeyboardInterrupt:
       sys.exit()
