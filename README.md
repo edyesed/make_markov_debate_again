@@ -4,7 +4,16 @@ Who doesn't love a markovbot seeded with a transcript of the presidential debate
 # I do
 
 
-# To run
+# To run (easy, slack)
+0. Setup an incoming webhook. note the URL
+0. `docker build -t pyapp:1 .`
+1. `docker run -e "SLACK_WEBHOOK=url_from_above" -it pyapp:1`
+
+# To run (easy, local)
+0. `docker build -t pyapp:1 .`
+1. `docker run -it pyapp:1`
+
+# To run (hard)
 0. `virtualenv ~/virtualenvs/markov`
 1. `source ~/virtualenvs/markov/bin/activate`
 1. `pip install -r requirements.txt`
