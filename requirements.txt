@@ -1,0 +1,2 @@
+PyMarkovChain==1.8
+requests==2.11.1
