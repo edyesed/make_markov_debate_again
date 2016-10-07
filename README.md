@@ -1,6 +1,10 @@
 # -_make_markov_debate_again_-
 Who doesn't love a markovbot seeded with a transcript of the presidential debate?  *I do*
 
+# from dockerhub
+[docker pull edyesed/make_markov_debate_again](https://hub.docker.com/r/edyesed/make_markov_debate_again/)
+[docker pull edyesed/make_markov_debate_again:debate_latest](https://hub.docker.com/r/edyesed/make_markov_debate_again/tags/)
+
 # Reference materials for the text
 0. Politico
 1. latimes
