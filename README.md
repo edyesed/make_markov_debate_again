@@ -2,6 +2,10 @@
 Who doesn't love a markovbot seeded with a transcript of the presidential debate?
 
 # I do
+0. Politico
+1. latimes
+3. http://www.realclearpolitics.com/
+4. https://www.hillaryclinton.com/speeches/
 
 
 # To run (easy, slack)
