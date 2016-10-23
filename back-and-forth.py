@@ -37,7 +37,7 @@ if __name__ == "__main__":
     try:
       # it used to be random. now with weights
       #name = random.choice(mcs.keys())
-      name = weighted_choice([("CLINTON", 40), ("TRUMP", 40), ("HOLT", 10), ("COOPER", 10), ("RADDATZ", 10)])
+      name = weighted_choice([("CLINTON", 40), ("TRUMP", 40), ("HOLT", 8), ("COOPER", 8), ("RADDATZ", 8), ("WALLACE", 8)])
       if os.environ.get('SLACK_WEBHOOK'):
         # come back and add a webhook POSTer
         emoji_name = ":bot_" + name.lower() + ":"
