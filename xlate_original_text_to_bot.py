@@ -14,7 +14,7 @@ import re
 #
 from io import open
 
-FILE='./transcript.pres.v2'
+FILE='./transcript.pres.v3'
 
 def main():
   re_speaker_text = re.compile(r"^([A-Z]+): (.*)", re.MULTILINE)
@@ -23,7 +23,7 @@ def main():
   for match in re_speaker_text.finditer(content):
     speaker, said = match.groups()
     # I know, so expensive
-    f = open('./training_texts/{0}.debate2.text'.format(speaker), encoding='utf-8', mode='a')
+    f = open('./training_texts/{0}.debate3.text'.format(speaker), encoding='utf-8', mode='a')
     f.write(said + "\n")
     f.close()
 
